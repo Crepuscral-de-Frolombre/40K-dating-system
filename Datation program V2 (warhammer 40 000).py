@@ -65,17 +65,19 @@ listmonth=["january",
            "december"]
 normalyear=[31,28,31,30,31,30,31,31,30,31,30,31] #counting days in a year
 leapyear=[31,29,31,30,31,30,31,31,30,31,30,31]
-# # # # #
-#       #
-#  Def  #
-#       #
-# # # # #
+# # # # # # # #
+#             #
+#  Functions  #
+#             #
+# # # # # # # #
 def infos (a):
     for i in range(int(len(information))-1):
         print(information[i])
     x=information[-1]
     return(x)
-# # # # #
+# # # # # # # # # # # # # #
+# Gregorian into imperial #
+# # # # # # # # # # # # # #
 def gTOi (a):
     #step 01: take the gregorian date
     print("give your date (day/month/year-hour/minute/second-source)")
@@ -136,7 +138,9 @@ def gTOi (a):
     imperialdate=str(source)+str(yearfraction)+"."+str(year)+".M"+str(millenium)
     #step 17: print imperial date
     return(imperialdate)
-# # # # #
+# # # # # # # # # # # # # #
+# Imperial into gregorian #
+# # # # # # # # # # # # # #
 def iTOg (a):
     #step 01: take the imperial date
     print("give your date (source yearfraction . year .M millenium)")
@@ -218,11 +222,11 @@ def iTOg (a):
     print(gregoriandate0)
     print(gregoriandate1)
     return(gregoriandate)
-# # # # # # #
-#           #
-# Program   #
-#           #
-# # # # # # #
+# # # # # # # # #
+#               #
+#  Main Program #
+#               #
+# # # # # # # # #
 for i in range(len(start)):
     print(start[i])
 while True:
